@@ -17,12 +17,219 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://www.hotapro.xyz/#org","name":"Hota Pro Agency","legalName":"CÔNG TY TNHH HOTA PRO","alternateName":"Hota Pro Company Limited","url":"https://www.hotapro.xyz/","email":"lien-he@hotapro.com","telephone":"+84559559756","slogan":"Một đội, năm chuyên môn, một mục tiêu.",
-"address":{"@type":"PostalAddress","streetAddress":"19A Trịnh Văn Bô, Hòe Thị, Xuân Phương","addressLocality":"Hà Nội","postalCode":"12008","addressCountry":"VN"},
-"sameAs":["https://www.facebook.com/hotapro","https://www.instagram.com/hotapro","https://www.threads.com/@hotapro","https://www.tiktok.com/@hotapro","https://www.youtube.com/@hotapro","https://github.com/hotapro","https://www.pinterest.com/hotapro","https://www.linkedin.com/company/hotapro"]},
-{"@type":"WebSite","@id":"https://www.hotapro.xyz/#web","url":"https://www.hotapro.xyz/","name":"Hota Pro Agency","inLanguage":"vi","publisher":{"@id":"https://www.hotapro.xyz/#org"}}]}
+<link href='/image.png' rel='image_src'/>
+<meta content='/logo.png' name='msapplication-TileImage'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='57x57'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='60x60'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='72x72'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='76x76'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='114x114'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='120x120'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='144x144'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='152x152'/>
+<link href='/logo.png' rel='apple-touch-icon' sizes='180x180'/>
+<link href='/logo.png' rel='icon' sizes='16x16' type='image/png'/>
+<link href='/logo.png' rel='icon' sizes='32x32' type='image/png'/>
+<link href='/logo.png' rel='icon' sizes='96x96' type='image/png'/>
+<link href='/logo.png' rel='icon' sizes='192x192' type='image/png'/>
+<meta content='/image.png' property='og:image'/>
+<meta content='/image.png' name='twitter:image'/>
+  <!--[ Schema Structured Data: Multi-domain Hota Pro Agency ]-->
+<script>
+(function () {
+  var MAIN = "https://hotapro.com";
+  var ORG_ID = MAIN + "/#organization";
+  
+  // 1. Khai báo danh sách hệ sinh thái domain của Hota Pro
+  var SITES = {
+    "hotapro.com": { 
+      name: "HotaPro.com — Cổng doanh nghiệp Việt Nam", 
+      description: "Trang chủ công khai của Công ty TNHH HOTA PRO: giới thiệu doanh nghiệp, sáu nhóm giải pháp, lĩnh vực spa và massage, dự án, quy trình, đội ngũ, sản phẩm, blog, FAQ và liên hệ.", 
+      language: "vi-VN" 
+    },
+    "hotapro.net": { 
+      name: "HotaPro.net — Cổng quốc tế đa ngôn ngữ", 
+      description: "Nội dung tiếng Anh mặc định, hỗ trợ thêm Trung giản thể, Hàn, Nhật, Pháp, Trung phồn thể Đài Loan, Thái, Hindi và Đức.", 
+      language: "en" 
+    },
+    "hotapro.us": { 
+      name: "HotaPro.us — Thị trường Hoa Kỳ", 
+      description: "Website tiếng Anh hướng đến doanh nghiệp Mỹ, nhấn mạnh giải pháp website, SEO, quảng cáo, thương hiệu và tự động hóa.", 
+      language: "en-US" 
+    },
+    "hotapro.org": { 
+      name: "HotaPro.org — Hồ sơ tổ chức", 
+      description: "Trang hồ sơ pháp nhân, sứ mệnh, nguyên tắc hoạt động, năng lực, thông tin liên hệ và tài liệu doanh nghiệp.", 
+      language: "vi-VN" 
+    },
+    "hotapro.online": { 
+      name: "HotaPro.online — Trạng thái dịch vụ", 
+      description: "Giao diện theo dõi trạng thái các tên miền và dịch vụ, lịch sử sự cố, thời gian phản hồi và thông báo.", 
+      language: "vi-VN" 
+    },
+    "hotapro.me": { 
+      name: "HotaPro.me — Hồ sơ và danh mục hệ sinh thái", 
+      description: "Danh thiếp số của doanh nghiệp, thông tin liên hệ, danh sách tên miền sở hữu hoặc quản lý đã xác nhận, mạng xã hội, các website, dự án và sản phẩm.", 
+      language: "vi-VN" 
+    },
+    "hotapro.store": { 
+      name: "HotaPro.store — Danh mục dịch vụ và bảng giá", 
+      description: "Danh mục dịch vụ, gói giải pháp, phạm vi công việc, quy trình báo giá và yêu cầu tư vấn.", 
+      language: "vi-VN" 
+    },
+    "hotapro.tech": { 
+      name: "HotaPro.tech — Công nghệ và phương pháp", 
+      description: "Giải thích quy trình kỹ thuật, kiến trúc website, SEO kỹ thuật, phần mềm, SaaS, ERP và tự động hóa.", 
+      language: "vi-VN" 
+    },
+    "hotapro.app": { 
+      name: "HotaPro.app — Trung tâm ứng dụng", 
+      description: "Danh mục ứng dụng, tính năng, hướng dẫn cài đặt Android, iOS, Windows và bản tải APK/EXE khi có bản phát hành thực.", 
+      language: "vi-VN" 
+    },
+    "hotapro.xyz": { 
+      name: "HotaPro.xyz — Hành trình thương hiệu", 
+      description: "Kể câu chuyện hình thành, triết lý, định hướng và các cột mốc phát triển.", 
+      language: "vi-VN" 
+    },
+    "hotapro.site": { 
+      name: "HotaPro.site — Danh mục sản phẩm và dự án Agency", 
+      description: "Trưng bày sản phẩm agency, website mẫu, dự án, thư viện giao diện và case study.", 
+      language: "vi-VN" 
+    }
+  };
+
+  // 2. Nhận diện Domain và thông tin trang hiện hành
+  var host = location.hostname.replace(/^www\./, "").toLowerCase();
+  var origin = location.origin;
+  var path = location.pathname;
+  var metaDesc = document.querySelector('meta[name="description"]');
+  
+  // Tự động lấy cấu hình trong SITES, nếu domain không có trong list thì tự động lấy theo title & meta description HTML
+  var site = SITES[host] || {
+    name: document.title,
+    description: metaDesc ? metaDesc.content : "",
+    language: document.documentElement.lang || "vi-VN"
+  };
+
+  var canonical = document.querySelector('link[rel="canonical"]');
+  var pageUrl = (canonical && canonical.href) || (origin + path);
+
+  // Xử lý tiêu đề cho WebPage
+  var info = (path === "/") ? { name: "Trang chủ - " + site.name } : { name: document.title };
+
+  var webPage = {
+    "@type": "WebPage",
+    "@id": pageUrl + "#webpage",
+    "url": pageUrl,
+    "name": info.name,
+    "inLanguage": site.language,
+    "isPartOf": { "@id": origin + "/#website" }
+  };
+  
+  if (site.description) webPage.description = site.description;
+  if (path === "/") webPage.about = { "@id": ORG_ID }; // Khẳng định trang chủ nói về Tổ chức này
+
+  // 3. Đóng gói dữ liệu @graph
+  var data = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        // Khai báo kép (Multi-Type) để mạnh hơn trong Local SEO & B2B
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": ORG_ID,
+        "name": "Hota Pro Agency",
+        "legalName": "Công ty TNHH Hota Pro",
+        "alternateName": "Hota Pro Company Limited",
+        "url": MAIN,
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/logo.png"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "/image.png"
+        },
+        "description": "Hota Pro Agency — Xây dựng thương hiệu số. Một đội, năm chuyên môn, một mục tiêu. Mỗi dịch vụ được vận hành như một module độc lập nhưng luôn đồng bộ vào cùng một chiến lược thương hiệu.",
+        "taxID": "0049200994",
+        "foundingDate": "2026-10-01",
+        "telephone": "+84559559756",
+        "email": "lien-he@hotapro.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "19A Trịnh Văn Bô",
+          "addressLocality": "Hòe Thị, Xuân Phương",
+          "addressRegion": "Hà Nội",
+          "postalCode": "12008",
+          "addressCountry": "VN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.03885995510801,
+          "longitude": 105.74321485889547
+        },
+        "openingHours": "Mo,Tu,We,Th,Fr 08:30-17:30",
+        "sameAs": [
+          "https://www.facebook.com/hotapro.official",
+          "https://www.youtube.com/c/hotaproVN",
+          "https://www.pinterest.com/hotaprovn",
+          "https://www.hotapro.site",
+          "https://www.hotapro.xyz",
+          "https://www.hotapro.net",
+          "https://www.hotapro.online",
+          "https://www.hotapro.app",
+          "https://www.hotapro.store",
+          "https://www.hotapro.me",
+          "https://www.hotapro.org",
+          "https://www.hotapro.tech",
+          "https://www.hotapro.com",
+          "https://www.hotapro.us"
+        ],
+        "areaServed": "VN",
+        "founder": {
+          "@type": "Person",
+          "name": "Ngô Anh Vũ",
+          "jobTitle": "Người đại diện pháp luật & CEO"
+        },
+        "knowsAbout": [
+          "Lập trình máy tính",
+          "Thiết kế và phát triển website theo yêu cầu",
+          "Phát triển phần mềm và ứng dụng web",
+          "Tối ưu hóa công cụ tìm kiếm SEO",
+          "Triển khai quảng cáo trực tuyến",
+          "Xây dựng và phát triển thương hiệu số",
+          "Tư vấn giải pháp công nghệ và chuyển đổi số",
+          "Phần mềm ERP",
+          "Dịch vụ mạng xã hội",
+          "Facebook",
+          "Zalo",
+          "TikTok",
+          "Instagram"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": origin + "/#website",
+        "url": origin,
+        "name": site.name,
+        "description": site.description,
+        "inLanguage": site.language,
+        "publisher": { "@id": ORG_ID }
+      },
+      webPage
+    ]
+  };
+
+  // 4. Inject (tiêm) đoạn dữ liệu chuẩn vào HTML
+  var old = document.getElementById("auto-jsonld-hotapro");
+  if (old) old.remove(); // Dọn dẹp script cũ nếu đang dùng framework React/Vue/Nextjs
+  var s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.id = "auto-jsonld-hotapro";
+  s.textContent = JSON.stringify(data);
+  document.head.appendChild(s);
+})();
 </script>
 <style>
 :root{--bg:#f7f0e4;--bg2:#efe4d1;--ink:#2a1218;--mute:#6b4f55;--wine:#5a1224;--wine2:#7b1d33;--cu:#b87333;--cu2:#8f5518;--card:#fffaf1;--line:#d9c7ab;--on:#f7f0e4;--r:18px;--serif:'Fraunces',Georgia,'Times New Roman',serif;--sans:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif}
